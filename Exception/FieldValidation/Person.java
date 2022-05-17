@@ -23,10 +23,10 @@ public class Person
 			System.out.println("Welcome, " + name);
 	}
 	
-	public Person(String name, String bornDate) throws InvalidAgeException
+	public Person(String name, String bornDate) throws InvalidAgeException 
 	{
-		_name = name;
-		_age = 0;
+		//Ipotizzo che la stringa bornDate produca età 0
+		this(name, 0);
 		
 		if(ValidateAge(_age))
 			System.out.println("Welcome, " + name);
@@ -42,4 +42,3 @@ public class Person
 		return b;
 	}
 }
-
