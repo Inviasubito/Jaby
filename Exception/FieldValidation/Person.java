@@ -34,7 +34,7 @@ public class Person
 	
 	private Boolean ValidateAge(int age) throws InvalidAgeException
 	{
-		Boolean b = _age > 18;
+		Boolean b = age > 18;
 		
 		if(!b)
 			throw new InvalidAgeException();	
